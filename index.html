@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<title>rain</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<style type="text/css">
+body {
+  background-image: url('waterfall.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+button {
+  padding: 0.5em 1em;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: 2px solid #eee;
+  width: 10em;
+  border-color: #eee;
+  cursor: pointer;
+}
+
+button:active {
+  color: #111;
+  background-color: #eee;
+  border-color: #111;
+}
+</style>
+</head>
+<body>
+
+<!--
+HTML5 Audio ends up with a ms gap when looping :-/
+-->
+<!--
+<audio controls loop src="waterfall.mp3"></audio>
+-->
+
+<button disabled>Play</button>
+
+<input type="range" min=0 max=10 value=10>
+
+<script src="audioplayer.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
+
